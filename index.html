@@ -191,6 +191,35 @@ body{
   margin-bottom:22px;
 }
 
+
+.hobbies{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+}
+
+.hobby{
+  background:rgba(255,255,255,.92);
+  border:1px solid #efc4d4;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 5px 15px rgba(120,55,85,.07);
+}
+
+.hobby img{
+  width:100%;
+  height:230px;
+  object-fit:cover;
+  display:block;
+}
+
+.hobby h3{
+  text-align:center;
+  color:#563a46;
+  font-size:17px;
+  padding:15px 10px 17px;
+}
+
 .songs{
   display:grid;
   gap:12px;
@@ -226,50 +255,6 @@ body{
   border-radius:999px;
   font-size:13px;
   white-space:nowrap;
-}
-
-
-.hobby-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:16px;
-}
-
-.hobby-card{
-  background:rgba(255,255,255,.94);
-  border:1px solid #efc4d4;
-  border-radius:18px;
-  overflow:hidden;
-  box-shadow:0 5px 15px rgba(120,55,85,.08);
-  transition:transform .2s ease, box-shadow .2s ease;
-}
-
-.hobby-card:hover{
-  transform:translateY(-4px);
-  box-shadow:0 9px 20px rgba(120,55,85,.12);
-}
-
-.hobby-card img{
-  width:100%;
-  height:220px;
-  object-fit:cover;
-  display:block;
-}
-
-.hobby-content{
-  padding:16px;
-}
-
-.hobby-content h3{
-  color:#563a46;
-  margin-bottom:7px;
-  font-size:18px;
-}
-
-.hobby-content p{
-  color:#866572;
-  font-size:13px;
-  line-height:1.6;
 }
 
 .footer{
@@ -309,14 +294,6 @@ body{
   .prev{left:20px}
   .next{right:20px}
 
-  .hobby-grid{
-    grid-template-columns:1fr;
-  }
-
-  .hobby-card img{
-    height:240px;
-  }
-
   .song{
     align-items:flex-start;
   }
@@ -324,6 +301,15 @@ body{
   .play{
     padding:8px 11px;
   }
+
+  .hobbies{
+    grid-template-columns:1fr;
+  }
+
+  .hobby img{
+    height:250px;
+  }
+
 }
 </style>
 </head>
@@ -336,7 +322,7 @@ body{
   <div class="navlinks">
     <a href="#home">Beranda</a>
     <a href="#social">Sosial Media</a>
-    <a href="#hobi">Hobi</a>
+    <a href="#hobbies">Hobi</a>
     <a href="#spotify">Top Spotify</a>
   </div>
 </nav>
@@ -405,34 +391,28 @@ body{
 
 </section>
 
-<section class="section hobbies" id="hobi">
-  <h2>🌷 Hobi Aku</h2>
-  <p class="sub">Beberapa hal yang aku suka lakukan di waktu luang ♡</p>
+<section class="section" id="hobbies">
 
-  <div class="hobby-grid">
-    <article class="hobby-card">
-      <img src="images/hobi/cooking.jpeg" alt="Cooking">
-      <div class="hobby-content">
-        <h3>🍳 Cooking</h3>
-        <p>Aku suka masak dan mencoba membuat makanan sendiri. Rasanya senang kalau hasil masakannya enak hehe.</p>
-      </div>
-    </article>
+  <h2>♡ My Hobbies</h2>
+  <p class="sub">Hal-hal yang aku suka lakukan di waktu luang ♡</p>
 
-    <article class="hobby-card">
-      <img src="images/hobi/gaming.jpeg" alt="Gaming">
-      <div class="hobby-content">
-        <h3>🎮 Gaming</h3>
-        <p>Gaming jadi salah satu cara aku mengisi waktu luang, apalagi kalau lagi ingin santai dan seru-seruan.</p>
-      </div>
-    </article>
+  <div class="hobbies">
 
-    <article class="hobby-card">
-      <img src="images/hobi/watching-film.jpeg" alt="Watching film">
-      <div class="hobby-content">
-        <h3>🎬 Watching Film</h3>
-        <p>Aku juga suka nonton film untuk hiburan dan menikmati cerita yang menarik.</p>
-      </div>
-    </article>
+    <div class="hobby">
+      <img src="images/hobby-cooking.jpeg" alt="Hobi cooking">
+      <h3>🍳 Cooking</h3>
+    </div>
+
+    <div class="hobby">
+      <img src="images/hobby-gaming.jpeg" alt="Hobi gaming">
+      <h3>🎮 Gaming</h3>
+    </div>
+
+    <div class="hobby">
+      <img src="images/hobby-watching-film.jpeg" alt="Hobi watching film">
+      <h3>🎬 Watching Film</h3>
+    </div>
+
   </div>
 </section>
 
