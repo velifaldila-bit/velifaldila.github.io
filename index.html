@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <title>Beranda</title>
+    <title>Website Velif Aldila</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style_velif.css">
 </head>
 
 <body bgcolor="burlywood">
@@ -20,35 +21,20 @@
         </tr>
         <tr>
             <td colspan="2" bgcolor="wheat">
-                <a href="index.html">Beranda</a> |
-                <a href="tentang-saya.html">Tentang Saya</a> |
-                <a href="sekolahku.html">Sekolahku</a> |
-                <a href="syair-lagu.html">Syair Lagu</a>
+                <a href="#" onclick="showPage('beranda'); return false;">Beranda</a> |
+                <a href="#" onclick="showPage('tentang'); return false;">Tentang Saya</a> |
+                <a href="#" onclick="showPage('sekolah'); return false;">Sekolahku</a> |
+                <a href="#" onclick="showPage('syair'); return false;">Syair Lagu</a>
             </td>
         </tr>
+
         <tr>
-            <td width="75%">
-                <!-- Content utama -->
-                <h3>Peringatan Maulid Nabi Muhammad SAW</h3>
-                <p align="right"><small><em>Jum'at, 4 September 2026</em></small></p>
-                <p align="center"><img src="images/foto1.jpg" width="100%"></p>
-                <p>Tangerang — SMK Negeri 1 Tangerang mengadakan kegiatan peringatan Maulid Nabi Muhammad SAW yang diikuti oleh para siswa, guru, dan seluruh warga sekolah. Kegiatan ini dilaksanakan di lingkungan SMK Negeri 1 Tangerang sebagai bentuk penghormatan dan untuk mengenang kelahiran Nabi Muhammad SAW.</p>
-                <p><a href="berita/berita-1.html">Selanjutnya</a></p>
-
-                <hr>
-
-                <h3>Liga Pensi SMK Negeri 1 Tangerang Berlangsung Meriah di Tangcity Mall</h3>
-                <p align="right"><small><em>Selasa, 14 September 2026</em></small></p>
-                <p align="center"><img src="images/foto2.jpg" width="100%"></p>
-                <p>Tangerang — SMK Negeri 1 Tangerang menggelar kegiatan Liga Pensi yang bertempat di Tangcity Mall, Main Atrium. Kegiatan ini diikuti oleh siswa-siswi SMK Negeri 1 Tangerang dengan berbagai penampilan seni dan kreativitas.</p>
-                <p><a href="berita/berita-2.html">Selanjutnya</a></p>
-
-                <!-- Akhir dari content utama -->
+            <td width="75%" id="content">
             </td>
             <td width="25%" valign="top" bgcolor="wheat">
                 <p>Tautan eksternal</p>
                 <ol>
-                    <li><a href="https://velifaldila-bit.github.io">Website Velif Aldila</a></li>
+                    <li><a href="https://velifaldila-bit.github.io/">Website Velif Aldila</a></li>
                     <li><a href="https://www.github.com">Github</a></li>
                     <li><a href="https://www.wikipedia.org">Wikipedia</a></li>
                     <li><a href="https://www.w3schools.com">W3Schools</a></li>
@@ -63,5 +49,93 @@
         </tr>
     </table>
     <p>&nbsp;</p>
+
+<script>
+function showPage(page) {
+    var content = document.getElementById("content");
+
+    if (page == "beranda") {
+        content.innerHTML = `
+            <h3>Peringatan Maulid Nabi Muhammad SAW</h3>
+            <p align="right"><small><em>Jum'at, 4 September 2026</em></small></p>
+            <p align="center"><img src="images/foto1.jpg" width="100%"></p>
+            <p>Tangerang — SMK Negeri 1 Tangerang mengadakan kegiatan peringatan Maulid Nabi Muhammad SAW yang diikuti oleh para siswa, guru, dan seluruh warga sekolah. Kegiatan ini dilaksanakan di lingkungan SMK Negeri 1 Tangerang sebagai bentuk penghormatan dan untuk mengenang kelahiran Nabi Muhammad SAW.</p>
+            <p><a href="#" onclick="showPage('berita1'); return false;">Selanjutnya</a></p>
+
+            <hr>
+
+            <h3>Liga Pensi SMK Negeri 1 Tangerang Berlangsung Meriah di Tangcity Mall</h3>
+            <p align="right"><small><em>Selasa, 14 September 2026</em></small></p>
+            <p align="center"><img src="images/foto2.jpg" width="100%"></p>
+            <p>Tangerang — SMK Negeri 1 Tangerang menggelar kegiatan Liga Pensi yang bertempat di Tangcity Mall, Main Atrium. Kegiatan ini diikuti oleh siswa-siswi SMK Negeri 1 Tangerang dengan berbagai penampilan seni dan kreativitas.</p>
+            <p><a href="#" onclick="showPage('berita2'); return false;">Selanjutnya</a></p>`;
+    }
+
+    if (page == "tentang") {
+        content.innerHTML = `
+            <h3>About me &gt;&lt;</h3>
+            <p>halloo, nama aku Velif. Aku berumur 16 tahun dan sekarang duduk di kelas XI di SMK Negeri 1 Tangerang. Sebagai seorang pelajar, sehari-hari aku menghabiskan banyak waktu di sekolah untuk belajar dan berinteraksi dengan teman-teman serta guru.</p>
+            <p>Aku termasuk orang yang ceria dan senang kalau melihat orang lain ikut senang. Aku juga sebenarnya cukup mudah akrab, tetapi biasanya kalau sudah merasa dekat dan nyaman dengan seseorang. Kalau ada teman yang ingin cerita, aku juga senang mendengarkan ceritanya. Menurutku, menjadi pendengar yang baik itu penting karena terkadang seseorang hanya ingin didengarkan tanpa dihakimi.</p>
+            <p>Di sekolah, aku paling suka saat bisa ngobrol dan berinteraksi dengan teman-teman. Berinteraksi dengan guru juga menjadi salah satu hal yang aku suka karena dari situ aku bisa belajar banyak hal, bukan hanya tentang pelajaran, tetapi juga tentang bagaimana bersikap dan berkomunikasi dengan orang lain.</p>
+            <p>Kalau sedang punya waktu luang, biasanya aku melakukan hal-hal yang aku suka, seperti memasak, bermain game, atau menonton film. Memasak menurutku cukup menyenangkan karena aku bisa mencoba membuat sesuatu sendiri. Bermain game dan menonton film juga sering aku lakukan untuk mengisi waktu luang dan bersantai.</p>
+            <p>Untuk ke depannya, aku punya keinginan untuk bisa diterima di universitas yang aku inginkan. Karena itu, aku ingin terus berusaha dan belajar supaya bisa mencapai keinginan tersebut. Aku juga berharap bisa menjalani masa sekolah dengan baik dan mendapatkan banyak pengalaman yang nantinya bisa berguna untuk masa depan.</p>
+            <p>Itulah sedikit cerita tentang diriku. Aku masih terus belajar dan berkembang, dan aku berharap ke depannya bisa menjadi versi diriku yang lebih baik tanpa harus kehilangan sifat-sifat yang aku miliki sekarang.</p>`;
+    }
+
+    if (page == "sekolah") {
+        content.innerHTML = `
+            <h3>Sekolahku</h3>
+            <p align="right"><small><em>Sabtu, 26 September 2026</em></small></p>
+            <p align="center"><img src="images/foto6.jpeg" width="50%"></p>
+            <p>bagi saya, sekolah bukan cuma tempat untuk belajar dan mengerjakan tugas. Di sekolah, saya juga bisa mendapatkan banyak pengalaman baru dan bertemu dengan orang-orang yang membuat hari-hari saya jadi lebih menyenangkan. Saya bersekolah di SMK Negeri 1 Tangerang dan sekarang duduk di kelas XI jurusan Desain Komunikasi Visual (DKV). Saya memilih jurusan ini karena saya memang tertarik dengan hal-hal yang berhubungan dengan desain dan dunia kreatif.</p>
+            <p>Selama belajar di jurusan DKV, saya mendapatkan banyak tugas yang cukup beragam. Dari tugas-tugas tersebut, saya jadi bisa mencoba membuat berbagai macam desain dan menuangkan ide yang saya punya. Saya juga mulai mengenal lebih banyak aplikasi yang digunakan dalam DKV, terutama aplikasi Adobe. Walaupun kadang ada tugas yang membuat bingung atau terasa susah, saya tetap mencoba mengerjakannya karena lama-kelamaan saya jadi lebih terbiasa.</p>
+            <p>Selain soal pelajaran, hal yang membuat saya betah di sekolah adalah teman-teman. Saya senang bisa ngobrol, bercanda, dan menghabiskan waktu bersama mereka. Menurut saya, adanya teman membuat suasana sekolah terasa lebih seru dan tidak terlalu membosankan. Saya juga senang berinteraksi dengan guru karena dari mereka saya bisa mendapatkan ilmu dan pengalaman baru.</p>
+            <p>Selama sekolah, saya juga mengikuti beberapa kegiatan yang membuat saya punya kesempatan untuk bertemu dengan lebih banyak orang. Dari situ saya belajar untuk lebih berani berbicara, bekerja sama dengan orang lain, dan menyelesaikan tanggung jawab yang diberikan kepada saya. Walaupun awalnya mungkin terasa canggung, lama-lama saya mulai terbiasa.</p>
+            <p>Bagi saya, masa sekolah adalah salah satu bagian yang akan banyak memberikan kenangan. Bukan hanya tentang pelajaran atau nilai, tetapi juga tentang teman, pengalaman, dan hal-hal kecil yang terjadi setiap hari. Saya berharap selama masih bersekolah, saya bisa terus mencoba hal-hal baru, belajar dari pengalaman, dan mempersiapkan diri untuk mencapai apa yang saya inginkan di masa depan. see you all :3</p>`;
+    }
+
+    if (page == "syair") {
+        content.innerHTML = `
+            <h3>Syair Lagu</h3>
+            <p align="center"><img src="images/foto7.jpg" width="50%"></p>
+            <p><em>Syair lagu dapat ditambahkan di bagian ini apabila kamu memiliki izin untuk menyalinnya.</em></p>`;
+    }
+
+    if (page == "berita1") {
+        content.innerHTML = `
+            <h3>Peringatan Maulid Nabi Muhammad SAW</h3>
+            <p align="right"><small><em>Jum'at, 4 September 2026</em></small></p>
+            <p align="center"><img src="images/foto1.jpg" width="100%"></p>
+            <p>Tangerang — SMK Negeri 1 Tangerang mengadakan kegiatan peringatan Maulid Nabi Muhammad SAW yang diikuti oleh para siswa, guru, dan seluruh warga sekolah. Kegiatan ini dilaksanakan di lingkungan SMK Negeri 1 Tangerang sebagai bentuk penghormatan dan untuk mengenang kelahiran Nabi Muhammad SAW.</p>
+            <p>Kegiatan Maulid Nabi diawali dengan pembukaan, dilanjutkan dengan pembacaan ayat suci Al-Qur’an dan sambutan dari pihak sekolah. Setelah itu, acara dilanjutkan dengan ceramah keagamaan yang membahas tentang keteladanan Nabi Muhammad SAW dalam kehidupan sehari-hari.</p>
+            <p>Para siswa mengikuti kegiatan dengan tertib dan antusias. Melalui kegiatan ini, siswa diharapkan dapat memahami dan menerapkan sifat-sifat baik yang dicontohkan oleh Nabi Muhammad SAW, seperti jujur, sabar, rendah hati, dan saling menghormati.</p>
+            <p>Selain sebagai kegiatan keagamaan, peringatan Maulid Nabi juga menjadi kesempatan bagi seluruh warga sekolah untuk mempererat kebersamaan. Acara berlangsung dengan lancar dan ditutup dengan doa bersama.</p>
+            <p>Dengan adanya kegiatan ini, SMK Negeri 1 Tangerang berharap para siswa tidak hanya mengenal sejarah dan keteladanan Nabi Muhammad SAW, tetapi juga dapat menerapkan nilai-nilai tersebut dalam kehidupan sehari-hari, baik di sekolah maupun di lingkungan masyarakat.</p>
+            <p><a href="#" onclick="showPage('beranda'); return false;">Kembali ke Beranda</a></p>`;
+    }
+
+    if (page == "berita2") {
+        content.innerHTML = `
+            <h3>Liga Pensi SMK Negeri 1 Tangerang Berlangsung Meriah di Tangcity Mall</h3>
+            <p align="right"><small><em>Selasa, 14 September 2026</em></small></p>
+            <p>Tangerang — SMK Negeri 1 Tangerang menggelar kegiatan Liga Pensi yang bertempat di Tangcity Mall, Main Atrium. Kegiatan ini diikuti oleh siswa-siswi SMK Negeri 1 Tangerang dengan berbagai penampilan seni dan kreativitas.</p>
+            <p align="center">
+                <img src="images/foto2.jpg" width="45%">
+                <img src="images/foto3.jpg" width="45%">
+            </p>
+            <p align="center">
+                <img src="images/foto4.jpg" width="45%">
+                <img src="images/foto5.jpg" width="45%">
+            </p>
+            <p>Kegiatan tersebut menghadirkan beberapa penampilan, yaitu Paskibra, teater, seni tari, dan Korean Club Nesta. Para siswa menampilkan kemampuan mereka di atas panggung dengan penuh semangat dan percaya diri. Penampilan yang beragam membuat suasana acara menjadi semakin ramai dan menarik perhatian para penonton.</p>
+            <p>Kegiatan Liga Pensi diselenggarakan sebagai wadah bagi siswa untuk menunjukkan bakat, kreativitas, dan kemampuan mereka di bidang seni. Selain itu, kegiatan ini juga menjadi kesempatan bagi para siswa untuk mendapatkan pengalaman tampil di hadapan banyak orang.</p>
+            <p>Acara berlangsung dengan meriah. Para penonton terlihat antusias menyaksikan setiap penampilan dan memberikan tepuk tangan serta dukungan kepada para peserta. Kekompakan para anggota Paskibra, penampilan teater, seni tari, hingga Korean Club Nesta turut menambah kemeriahan acara.</p>
+            <p>Melalui kegiatan Liga Pensi ini, siswa SMK Negeri 1 Tangerang dapat menyalurkan bakat dan kreativitas mereka sekaligus mempererat kebersamaan antarsiswa. Kegiatan berlangsung dengan lancar dan mendapat antusiasme dari para penonton yang hadir.</p>
+            <p><a href="#" onclick="showPage('beranda'); return false;">Kembali ke Beranda</a></p>`;
+    }
+}
+
+showPage('beranda');
+</script>
 </body>
 </html>
