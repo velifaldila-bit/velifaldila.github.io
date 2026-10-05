@@ -1,0 +1,117 @@
+/* CSS Website Velif Aldila
+   Hanya untuk mempercantik HTML yang sudah ada.
+*/
+
+body {
+    background-color: #d8b08c !important;
+    font-family: Arial, sans-serif;
+    color: #4b3528;
+    margin: 0;
+    padding: 0;
+}
+
+body > table {
+    border: 1px solid #8b5e3c !important;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(80, 50, 30, 0.20);
+}
+
+body > table tr:first-child td {
+    background-color: #8b5e3c !important;
+    border-radius: 17px 17px 0 0;
+    padding: 18px;
+}
+
+body > table h1 {
+    margin: 5px 0;
+    font-size: 30px;
+}
+
+body > table tr:nth-child(2) td {
+    background-color: #f3dfbd !important;
+    padding: 12px;
+}
+
+body > table tr:nth-child(2) a {
+    color: #5b3924;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 7px 10px;
+    border-radius: 10px;
+}
+
+body > table tr:nth-child(2) a:hover {
+    background-color: #d6ad82;
+}
+
+#content {
+    background-color: #fffaf4;
+    color: #4b3528;
+    line-height: 1.7;
+    vertical-align: top;
+}
+
+#content h3 {
+    color: #754b2d;
+    margin-top: 5px;
+}
+
+#content hr {
+    border: 0;
+    border-top: 1px solid #d8b08c;
+    margin: 25px 0;
+}
+
+#content img {
+    border-radius: 14px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 3px 10px rgba(80, 50, 30, 0.18);
+}
+
+#content img[src*="foto2"],
+#content img[src*="foto3"],
+#content img[src*="foto4"],
+#content img[src*="foto5"] {
+    border-radius: 12px;
+}
+
+#content a {
+    color: #7a4d2d;
+    font-weight: bold;
+}
+
+#content a:hover {
+    color: #a66b3f;
+}
+
+body > table tr:nth-last-child(2) td:nth-child(2) {
+    background-color: #f3dfbd !important;
+    border-left: 1px solid #d2ae86;
+}
+
+body > table tr:nth-last-child(2) td:nth-child(2) a {
+    color: #5b3924;
+    text-decoration: none;
+}
+
+body > table tr:nth-last-child(2) td:nth-child(2) a:hover {
+    text-decoration: underline;
+}
+
+body > table tr:last-child td {
+    background-color: #8b5e3c !important;
+    border-radius: 0 0 17px 17px;
+    padding: 12px;
+}
+
+#content p[align="center"] {
+    margin: 15px 0;
+}
+
+@media screen and (max-width: 850px) {
+    body > table {
+        width: 95% !important;
+    }
+}
