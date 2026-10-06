@@ -3,7 +3,114 @@
 <head>
     <title>Website Velif Aldila</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="style_velif.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: "Quicksand", sans-serif;
+            color: #5b3b2a;
+        }
+
+        /* Header */
+        body > table > tbody > tr:first-child > td {
+            background-image: url("background-coklat.jpg") !important;
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0 6px 14px rgba(70, 40, 25, 0.35);
+            border-radius: 18px 18px 0 0;
+        }
+
+        /* Footer */
+        body > table > tbody > tr:last-child > td {
+            background-image: url("background-coklat.jpg") !important;
+            background-size: cover;
+            background-position: center;
+            border-radius: 0 0 18px 18px;
+        }
+
+        /* Judul */
+        h1, h3 {
+            font-family: "Baloo 2", cursive;
+            text-align: center;
+            letter-spacing: 0.5px;
+        }
+
+        h1 {
+            text-shadow: 2px 3px 5px rgba(55, 30, 20, 0.35);
+        }
+
+        h3 {
+            color: #70452f;
+            font-size: 25px;
+            margin-bottom: 8px;
+        }
+
+        /* Isi website */
+        #content {
+            font-family: "Quicksand", sans-serif;
+            color: #624331;
+            line-height: 1.8;
+        }
+
+        #content p {
+            color: #624331;
+            font-size: 16px;
+        }
+
+        #content em,
+        #content small {
+            color: #8a6248;
+        }
+
+        #content a {
+            color: #8b5738;
+            font-weight: 700;
+        }
+
+        #content a:hover {
+            color: #5f3825;
+        }
+
+        #content hr {
+            border: 0;
+            border-top: 2px dashed #c89d78;
+            margin: 22px 0;
+        }
+
+        /* Tautan menu */
+        body > table tr:nth-child(2) a {
+            font-family: "Quicksand", sans-serif;
+            color: #65432f;
+            font-weight: 700;
+        }
+
+        /* Kotak utama */
+        body > table {
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 7px 18px rgba(70, 40, 25, 0.22);
+        }
+
+        /* Foto */
+        #content img {
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(70, 40, 25, 0.18);
+        }
+
+        /* Tautan eksternal */
+        body > table tr:nth-last-child(2) td:nth-child(2) {
+            color: #624331;
+        }
+
+        body > table tr:nth-last-child(2) td:nth-child(2) a {
+            color: #795038;
+            font-weight: 600;
+        }
+    </style>
+
 </head>
 
 <body bgcolor="burlywood">
@@ -58,7 +165,7 @@ function showPage(page) {
         content.innerHTML = `
             <h3>Peringatan Maulid Nabi Muhammad SAW</h3>
             <p align="right"><small><em>Jum'at, 4 September 2026</em></small></p>
-            <p align="center"><img src="foto1.jpg" width="100%"></p>
+            <p align="center"><img src="images/foto1.jpg" width="100%"></p>
             <p>Tangerang — SMK Negeri 1 Tangerang mengadakan kegiatan peringatan Maulid Nabi Muhammad SAW yang diikuti oleh para siswa, guru, dan seluruh warga sekolah. Kegiatan ini dilaksanakan di lingkungan SMK Negeri 1 Tangerang sebagai bentuk penghormatan dan untuk mengenang kelahiran Nabi Muhammad SAW.</p>
             <p><a href="#" onclick="showPage('berita1'); return false;">Selanjutnya</a></p>
 
@@ -66,7 +173,7 @@ function showPage(page) {
 
             <h3>Liga Pensi SMK Negeri 1 Tangerang Berlangsung Meriah di Tangcity Mall</h3>
             <p align="right"><small><em>Selasa, 14 September 2026</em></small></p>
-            <p align="center"><img src="foto2.jpg" width="100%"></p>
+            <p align="center"><img src="images/foto2.jpg" width="100%"></p>
             <p>Tangerang — SMK Negeri 1 Tangerang menggelar kegiatan Liga Pensi yang bertempat di Tangcity Mall, Main Atrium. Kegiatan ini diikuti oleh siswa-siswi SMK Negeri 1 Tangerang dengan berbagai penampilan seni dan kreativitas.</p>
             <p><a href="#" onclick="showPage('berita2'); return false;">Selanjutnya</a></p>`;
     }
@@ -86,7 +193,7 @@ function showPage(page) {
         content.innerHTML = `
             <h3>Sekolahku</h3>
             <p align="right"><small><em>Sabtu, 26 September 2026</em></small></p>
-            <p align="center"><img src="foto6.jpeg" width="50%"></p>
+            <p align="center"><img src="images/foto6.jpeg" width="50%"></p>
             <p>bagi saya, sekolah bukan cuma tempat untuk belajar dan mengerjakan tugas. Di sekolah, saya juga bisa mendapatkan banyak pengalaman baru dan bertemu dengan orang-orang yang membuat hari-hari saya jadi lebih menyenangkan. Saya bersekolah di SMK Negeri 1 Tangerang dan sekarang duduk di kelas XI jurusan Desain Komunikasi Visual (DKV). Saya memilih jurusan ini karena saya memang tertarik dengan hal-hal yang berhubungan dengan desain dan dunia kreatif.</p>
             <p>Selama belajar di jurusan DKV, saya mendapatkan banyak tugas yang cukup beragam. Dari tugas-tugas tersebut, saya jadi bisa mencoba membuat berbagai macam desain dan menuangkan ide yang saya punya. Saya juga mulai mengenal lebih banyak aplikasi yang digunakan dalam DKV, terutama aplikasi Adobe. Walaupun kadang ada tugas yang membuat bingung atau terasa susah, saya tetap mencoba mengerjakannya karena lama-kelamaan saya jadi lebih terbiasa.</p>
             <p>Selain soal pelajaran, hal yang membuat saya betah di sekolah adalah teman-teman. Saya senang bisa ngobrol, bercanda, dan menghabiskan waktu bersama mereka. Menurut saya, adanya teman membuat suasana sekolah terasa lebih seru dan tidak terlalu membosankan. Saya juga senang berinteraksi dengan guru karena dari mereka saya bisa mendapatkan ilmu dan pengalaman baru.</p>
@@ -96,45 +203,16 @@ function showPage(page) {
 
     if (page == "syair") {
         content.innerHTML = `
-            <h3>Hancur Lebih Dulu</h3>
-            <p align="center"><img src="foto7.jpg" width="50%"></p>
-            <p><em>Caraku tuk menjaga hatiku
-<p>Dengan selalu memikirkan kamu.</p>
-<p>Ku jadi manusia paling setia.</p>
-<p>Banggakan dirimu di setiap nafas yang ku hela.</p>
-
-<p>Namun kini sering ku dengar.</p>
-<p>Kau bicara dalam tidurmu.</p>
-<p>Tentang kenyataan yang tak pernah terlintas di benakku.</p>
-<p>Bahwa selama ini dirinya.</p>
-<p>Yang kau bayangkan saat memelukku.</p>
-
-<p>Biarlah ku bunuh perasaanku.</p>
-<p>Meski hidupku hancur lebih dulu.</p>
-<p>Tak sanggup menunggu nanti.</p>
-<p>Saat kau tak mencintaiku lagi.</p>
-<p>Karena hanya aku yang kan terluka.</p>
-<p>Di saat terungkap segalanya.</p>
-<p>ku coba nikmati.</p>
-<p>Detik demi detik tanpa kamu lagi.</p>
-
-<p>Caramu menyakiti hatiku.</p>
-<p>Yang terlanjur ku titipkan padamu.</p>
-<p>Yang berusaha terlihat setia.</p>
-<p>Yang curangi aku hingga membuat semua sia-sia.</p>
-
-<p>Karena kini sering ku dengar.</p>
-<p>Kau bicara dalam tidurmu.</p>
-<p>Tentang kenyataan yang tak pernah terlintas di benakku.</p>
-<p>Bahwa selama ini dirinya.</p>
-<p>Yang kau bayangkan saat memelukku</em></p>`;
+            <h3>Syair Lagu</h3>
+            <p align="center"><img src="images/foto7.jpg" width="50%"></p>
+            <p><em>Syair lagu dapat ditambahkan di bagian ini apabila kamu memiliki izin untuk menyalinnya.</em></p>`;
     }
 
     if (page == "berita1") {
         content.innerHTML = `
             <h3>Peringatan Maulid Nabi Muhammad SAW</h3>
             <p align="right"><small><em>Jum'at, 4 September 2026</em></small></p>
-            <p align="center"><img src="foto1.jpg" width="100%"></p>
+            <p align="center"><img src="images/foto1.jpg" width="100%"></p>
             <p>Tangerang — SMK Negeri 1 Tangerang mengadakan kegiatan peringatan Maulid Nabi Muhammad SAW yang diikuti oleh para siswa, guru, dan seluruh warga sekolah. Kegiatan ini dilaksanakan di lingkungan SMK Negeri 1 Tangerang sebagai bentuk penghormatan dan untuk mengenang kelahiran Nabi Muhammad SAW.</p>
             <p>Kegiatan Maulid Nabi diawali dengan pembukaan, dilanjutkan dengan pembacaan ayat suci Al-Qur’an dan sambutan dari pihak sekolah. Setelah itu, acara dilanjutkan dengan ceramah keagamaan yang membahas tentang keteladanan Nabi Muhammad SAW dalam kehidupan sehari-hari.</p>
             <p>Para siswa mengikuti kegiatan dengan tertib dan antusias. Melalui kegiatan ini, siswa diharapkan dapat memahami dan menerapkan sifat-sifat baik yang dicontohkan oleh Nabi Muhammad SAW, seperti jujur, sabar, rendah hati, dan saling menghormati.</p>
@@ -149,12 +227,12 @@ function showPage(page) {
             <p align="right"><small><em>Selasa, 14 September 2026</em></small></p>
             <p>Tangerang — SMK Negeri 1 Tangerang menggelar kegiatan Liga Pensi yang bertempat di Tangcity Mall, Main Atrium. Kegiatan ini diikuti oleh siswa-siswi SMK Negeri 1 Tangerang dengan berbagai penampilan seni dan kreativitas.</p>
             <p align="center">
-                <img src="foto2.jpg" width="45%">
-                <img src="foto3.jpg" width="45%">
+                <img src="images/foto2.jpg" width="45%">
+                <img src="images/foto3.jpg" width="45%">
             </p>
             <p align="center">
-                <img src="foto4.jpg" width="45%">
-                <img src="foto5.jpg" width="45%">
+                <img src="images/foto4.jpg" width="45%">
+                <img src="images/foto5.jpg" width="45%">
             </p>
             <p>Kegiatan tersebut menghadirkan beberapa penampilan, yaitu Paskibra, teater, seni tari, dan Korean Club Nesta. Para siswa menampilkan kemampuan mereka di atas panggung dengan penuh semangat dan percaya diri. Penampilan yang beragam membuat suasana acara menjadi semakin ramai dan menarik perhatian para penonton.</p>
             <p>Kegiatan Liga Pensi diselenggarakan sebagai wadah bagi siswa untuk menunjukkan bakat, kreativitas, dan kemampuan mereka di bidang seni. Selain itu, kegiatan ini juga menjadi kesempatan bagi para siswa untuk mendapatkan pengalaman tampil di hadapan banyak orang.</p>
